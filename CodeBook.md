@@ -1,17 +1,24 @@
 # Course Project Codebook
 
 Original data source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 Data file: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 # The run_analysis.R script does the following:
 Merges the data files (X_train.txt and X_test.txt) into one dataset
+
 Merges the activity labels (y_train.txt and y_test.txt) into one vector
+
 Merges the subject numbers (subject_train.txt and subject_test.txt) into one vector
 
 Extracts only the mean and standard deviation measurement variables from the merged dataset
+
 Matches the activity names from the activity_labels.txt files to the activity labels
+
 Provides clean names to the variables
+
 Combines the individual vectors to the main data table. This is saved as the R object 'fullData' and the text file 'fullData.txt'
+
 Calculates the means for each of those mean and standard deviation measurements, for each subject number and activity name. This is saved as the R object 'finalData' and the text file 'means.txt'
 
 
